@@ -64,11 +64,15 @@ params:
   ShowToc: true # 展示文章详情页的目录
   comments: true # 评论
   # images: ["https://1.postimg.cc/7hwBy7Vs/calcr.png"] # 缺省的图片，比如，博客的封面
-  DateFormat: "2001-08-08" # 这个时间是作者自己写的，只能这样写
+  DateFormat: "2006-01-02" # 这个时间是作者自己写的，只能这样写
 
   homeInfoParams:
     Title: "Hey Guys 👋"
-  # socialIncons:
+  
+  socialIncons:
+    - name: github
+      title: Follow my Github
+      url: "https://github.com/xiiao-b"
 
   fuseOpts:
     isCaseSensitive: false # 是否大小写敏感
@@ -80,3 +84,46 @@ params:
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
     includeMatches: true
+
+  giscus:
+    repo: "xiiao-b/xiiao-b.github.io"
+    repoId: "R_kgDOMzxQUw"
+    category: "Announcements"
+    categoryId: "DIC_kwDOMzxQU84CinHf"
+    mapping: "pathname"
+    strict: "0"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    lightTheme: "light"
+    darkTheme: "dark"
+    lang: "zh-CN"
+    crossorigin: "anonymous"
+  assets:
+    favicon: "favicon.png"
+    favicon16x16: "favicon.png"
+    favicon32x32: "favicon.png"
+    apple_touch_icon: "favicon.png"
+    safari_pinned_tab: "favicon.png"
+    disableHLJS: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # 可以 unsafe，有些 html 标签和样式可能需要
+  highlight:
+    anchorLineNos: false # 不要给行号设置锚标
+    codeFences: true # 代码围栏
+    noClasses: false # TODO: 不知道干啥的，暂时没必要了解，不影响展示
+    lineNos: true # 代码行
+    lineNumbersInTable: false # 不要设置成 true，否则如果文章开头是代码的话，摘要会由一大堆数字(即代码行号)开头文章
+    # 这里设置 style 没用，得自己加 css
+    # style: "github-dark"
+    # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  
