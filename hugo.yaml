@@ -87,9 +87,9 @@ params:
 
   giscus:
     repo: "xiiao-b/xiiao-b.github.io"
-    repoId: "R_kgDOMzxQUw"
+    repoId: "R_kgDOM0quuA"
     category: "Announcements"
-    categoryId: "DIC_kwDOMzxQU84CinHf"
+    categoryId: "DIC_kwDOM0quuM4CipYo"
     mapping: "pathname"
     strict: "0"
     reactionsEnabled: "1"
