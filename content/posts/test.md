@@ -15,6 +15,6 @@ int main() {
 }
 ```
 
-```
+```math
 \alpha^2
 ```
