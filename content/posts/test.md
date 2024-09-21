@@ -16,5 +16,5 @@ int main() {
 ```
 
 ```
-$\alpha^2$
+\alpha^2
 ```
