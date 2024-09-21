@@ -16,5 +16,5 @@ int main() {
 ```
 
 ```math
-\alpha^2
+\boldsymbol{x}_{i+1}+\boldsymbol{x}_{i+2}=\boldsymbol{x}_{i+3}
 ```
